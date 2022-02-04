@@ -1,0 +1,10 @@
+services:
+   eurekacontainer2:
+     image: springcloud/eureka
+     volumes:
+       - data-volume:/temp
+     ports:
+        - 8761:8761
+
+volumes:
+  data-volume:
